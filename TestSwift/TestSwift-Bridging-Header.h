@@ -14,6 +14,8 @@
 #import <SDWebImage/SDImageCache.h>
 #import <SDWebImage/UIImage+GIF.h>
 
+//#import "UIViewController+swizzle.h"
+#import "UIViewController+Swizzle.h"
 
 #import <SDCycleScrollView/SDCycleScrollView.h>
 

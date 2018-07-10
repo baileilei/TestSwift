@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F2CCCC92A36EDB746C8524E /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
+		6030237F20F4C438001F5795 /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030237B20F4C438001F5795 /* UIViewController+Swizzle.m */; };
+		6030238020F4C438001F5795 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030237E20F4C438001F5795 /* JRSwizzle.m */; };
 		8F2E8261E422EEBF2BC125D6 /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
 		FA07A26B1EA1EF8600B0A071 /* YJSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */; };
 		FA07A26D1EA1EF9000B0A071 /* YJSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */; };
@@ -277,6 +279,10 @@
 /* Begin PBXFileReference section */
 		0AF8EC3595F779412EB3F401 /* Pods-TestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.release.xcconfig"; sourceTree = "<group>"; };
 		49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6030237B20F4C438001F5795 /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
+		6030237C20F4C438001F5795 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		6030237D20F4C438001F5795 /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
+		6030237E20F4C438001F5795 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		F96A0CE05D5D19AB7F7E8B45 /* Pods-TestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSliderViewController.swift; sourceTree = "<group>"; };
 		FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSlider.swift; sourceTree = "<group>"; };
@@ -432,6 +438,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6030237A20F4C438001F5795 /* swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				6030237B20F4C438001F5795 /* UIViewController+Swizzle.m */,
+				6030237C20F4C438001F5795 /* JRSwizzle.h */,
+				6030237D20F4C438001F5795 /* UIViewController+Swizzle.h */,
+				6030237E20F4C438001F5795 /* JRSwizzle.m */,
+			);
+			path = swizzle;
+			sourceTree = "<group>";
+		};
 		A288A701D673BEBC08D0A1C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -593,6 +610,7 @@
 		FA3F270A1E4C32B700CAA270 /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6030237A20F4C438001F5795 /* swizzle */,
 				FA3180B21FA187980026CD6F /* VLC ReadMe.txt */,
 				FA3C10C61F0CBC530008A0F7 /* 测试HandyJSON */,
 				FA3BF1461EB828E7000A37AD /* 批量上传图片 */,
@@ -1124,6 +1142,7 @@
 			files = (
 				FA3F274A1E4C593700CAA270 /* AnimationTextVC.swift in Sources */,
 				FA3F270E1E4C32B700CAA270 /* ViewController.swift in Sources */,
+				6030238020F4C438001F5795 /* JRSwizzle.m in Sources */,
 				FA3F27441E4C591700CAA270 /* PoPMenuViewController.swift in Sources */,
 				FA5FBFD61EA87EFA009C65BF /* YJDownloadProgress.swift in Sources */,
 				FA32A40E1E821D4A00171770 /* SnapKitViewController.swift in Sources */,
@@ -1147,6 +1166,7 @@
 				FA83C4F21E8B4D980027B7AD /* TestPopoverViewController.swift in Sources */,
 				FA3F27571E4C595A00CAA270 /* CornerRadiusViewController.swift in Sources */,
 				FA860A131E519A7A0084A025 /* YJAlamafireHelper.swift in Sources */,
+				6030237F20F4C438001F5795 /* UIViewController+Swizzle.m in Sources */,
 				FAE61D4D1E7634E200C8C4AE /* QRCodeGenerateViewController.swift in Sources */,
 				FAE61D581E763B2C00C8C4AE /* UIImageExtension.swift in Sources */,
 				FA55EEC41E76887900684131 /* UIColorExtension.swift in Sources */,
